@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<style>
+    input[type=text], input[type=email], input[type=password] {
+        width: 25%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+</style>
+<body>
+    <form name="signup" onsubmit="return validate_form()">
+            <div id="first_name">
+                <label for="first-name"><b>First Name: </b></label>
+                <input type="text" placeholder="John" name="first-name" required><b><span class="error" style="color:red;"></span></b>
+            </div>
+
+            <div id="last_name">
+                <label for="last-name"><b>Last Name: </b></label>
+                <input type="text" placeholder="Doe" name="last-name" required><b><span class="error" style="color:red;"></span></b>
+            </div>
+            
+            <div id="email_div">
+                <label for="email"><b>Email: </b></label>
+                <input type="email" placeholder="Email" name="email" required><b><span class="error" style="color:red;"></span></b>
+            </div>
+            
+            <div id="password_div">
+                <label for="password"><b>Password: </b></label>
+                <input type="password" placeholder="******" name="password" ><b><span class="error" style="color:red;"></span></b>
+            </div>
+            
+            <div id="confirm_password_div">
+                <label for="confirm-password"><b>Confirm Password: </b></label>
+                <input type="password" placeholder="******" name="confirm-password" ><b><span class="error" style="color:red;"></span></b>
+            </div>
+             
+            <div>
+                <input type="submit" value="Register">
+            </div>
+    </form>
+</body>
+<script src="validator.js"></script>
+</html>
